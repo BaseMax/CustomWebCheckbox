@@ -17,14 +17,7 @@ body
     /* #Bug: Cross Browser */
     user-select: none;
 }
-.checkbox_container input
-{
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-}
-.checkbox_mark
+.checkbox_container .checkbox_mark
 {
     width: 30px;
     height: 30px;
@@ -43,7 +36,14 @@ body
 {
     background-color: #1DDBDE;
 }
-.checkbox_mark:after
+.checkbox_container input
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.checkbox_container .checkbox_mark:after
 {
     display: none;
     content: "";
